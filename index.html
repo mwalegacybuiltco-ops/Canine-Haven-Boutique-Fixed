@@ -150,12 +150,16 @@
       }catch(e){ return ""; }
     }
     function ensureAffiliateFromUrl(){
-      const code = affCodeFromUrl();
-      if(code){
-        store.set("chb_aff", { code, at: Date.now() });
-        store.set("chb_aff_unlocked", true);
-      }
-    }
+  const code = affCodeFromUrl();
+  if(code){
+    // Apply referral tag ONLY (do not unlock affiliate back office)
+    store.set("chb_aff", { code, at: Date.now() });
+
+    // Safety: always keep affiliate center locked for referral links
+    store.del("chb_aff_unlocked");
+  }
+}
+
     function getAffiliate(){ return store.get("chb_aff", null); }
 
     function generateCode(name){
