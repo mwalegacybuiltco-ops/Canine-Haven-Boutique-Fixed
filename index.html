@@ -391,14 +391,15 @@
 
       $("#apply").onclick = ()=> openLink(CFG.publicPages.becomeAffiliate);
 
-      // If opened with ?aff=CODE, auto unlock
-      const urlCode = affCodeFromUrl();
-      if(urlCode){
-        store.set("chb_aff", { code:urlCode, at: Date.now() });
-        store.set("chb_aff_unlocked", true);
-        renderAffiliateCenter();
-      }
-    }
+      // If opened with ?aff=CODE, tag referral ONLY (stay locked)
+const urlCode = affCodeFromUrl();
+if(urlCode){
+  store.set("chb_aff", { code:urlCode, at: Date.now() });
+  store.del("chb_aff_unlocked");
+  showToast("Referral code applied ✅");
+  // stay on the gate page until PIN is entered
+}
+
 
     function renderAffiliateCenter(){
       setActive("affiliate");
