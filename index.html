@@ -345,10 +345,14 @@
       $("#m_support").onclick = ()=> openLink(CFG.publicPages.support);
     }
 
-    function renderAffiliateGate(){
-      setActive("affiliate");
-      const unlocked = store.get("chb_aff_unlocked", false);
-      if(unlocked){ renderAffiliateCenter(); return; }
+    // If opened with ?aff=CODE, tag referral ONLY (stay locked)
+const urlCode = affCodeFromUrl();
+if(urlCode){
+  store.set("chb_aff", { code:urlCode, at: Date.now() });
+  try { localStorage.removeItem("chb_aff_unlocked"); } catch(e) {}
+  showToast("Referral code applied ✅");
+  // stay on gate page until PIN is entered
+}
 
       const aff = getAffiliate();
       const hasAff = aff && aff.code;
