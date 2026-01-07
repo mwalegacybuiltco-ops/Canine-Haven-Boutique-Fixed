@@ -41,7 +41,7 @@ window.CHB_CONFIG = {
     startHere: "https://docs.google.com/document/d/1aVUoTo7Imo2srT53p1fKK7CaPSJXeik_3oM1tBg9duU/edit?usp=sharing",
     training: "https://beacons.ai/PASTE_TRAINING",
     fourCorners: "https://beacons.ai/PASTE_FOUR_CORNERS",
-    teamBuilder: "https://docs.google.com/spreadsheets/d/19x5lw916l8mr1OsgeaDLNTgccwv9jTFmqNERKL7KBaM/edit?usp=sharing",
+    teamBuilder: "https://docs.google.com/spreadsheets/d/1JtPWf-q8SvNz6gnXFyIOJnIFFwZ9XKPltdZRHqlXYkw/edit?usp=sharing",
     payouts: "https://forms.gle/u1Ag7QFY3UZBFh4J9",
     stats: "https://docs.google.com/document/d/1EJe9o_PFRLa1LRZ9Vb5OU-bylIpNerPSZ3y3qqkKLoA/edit?usp=sharing"
   }
