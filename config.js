@@ -43,6 +43,6 @@ window.CHB_CONFIG = {
     fourCorners: "https://beacons.ai/PASTE_FOUR_CORNERS",
     teamBuilder: "https://forms.gle/PASTE_TEAM_BUILDER",
     payouts: "https://forms.gle/PASTE_PAYOUTS",
-    stats: "https://docs.google.com/spreadsheets/d/PASTE_STATS_SHEET"
+    stats: "https://docs.google.com/document/d/1EJe9o_PFRLa1LRZ9Vb5OU-bylIpNerPSZ3y3qqkKLoA/edit?usp=sharing"
   }
 };
