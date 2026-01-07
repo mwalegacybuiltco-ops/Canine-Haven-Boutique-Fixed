@@ -345,14 +345,12 @@
       $("#m_support").onclick = ()=> openLink(CFG.publicPages.support);
     }
 
-    /function renderAffiliateGate(){
+    function renderAffiliateGate(){
   setActive("affiliate");
 
-  // If already unlocked, go straight in
   const unlocked = store.get("chb_aff_unlocked", false);
   if(unlocked){ renderAffiliateCenter(); return; }
 
-  // Tag referral ONLY (do not unlock)
   const urlCode = affCodeFromUrl();
   if(urlCode){
     store.set("chb_aff", { code:urlCode, at: Date.now() });
