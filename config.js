@@ -32,7 +32,7 @@ window.CHB_CONFIG = {
     },
     workWithUs: {
       // This is your PUBLIC "Share & Earn" page or Google Form link
-      shareEarn: "https://forms.gle/PASTE_SHARE_EARN_FORM"
+      shareEarn: "https://docs.google.com/document/d/1W9T4ZZzuZ-Xj9RYquc69b4G3oYGSmsGrdv78cEFKa18/edit?usp=sharing"
     }
   },
 
