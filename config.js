@@ -27,7 +27,7 @@ window.CHB_CONFIG = {
       petParentMerch: "https://beacons.ai/PASTE_PET_PARENT_MERCH_PAGE"
     },
     about: {
-      ourStory: "https://beacons.ai/PASTE_OUR_STORY",
+      ourStory: "https://docs.google.com/document/d/1VOtr23jMYWVdlcWUiQ_Sup4AH6-HQnadODGU-lSPJwg/edit?usp=sharing",
       community: "https://instagram.com/PASTE_INSTAGRAM"
     },
     workWithUs: {
