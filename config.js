@@ -38,7 +38,7 @@ window.CHB_CONFIG = {
 
   // AFFILIATE BACK OFFICE (hidden unless unlocked)
   affiliateBackOffice: {
-    startHere: "https://beacons.ai/PASTE_START_HERE",
+    startHere: "https://docs.google.com/document/d/1aVUoTo7Imo2srT53p1fKK7CaPSJXeik_3oM1tBg9duU/edit?usp=sharing",
     training: "https://beacons.ai/PASTE_TRAINING",
     fourCorners: "https://beacons.ai/PASTE_FOUR_CORNERS",
     teamBuilder: "https://forms.gle/PASTE_TEAM_BUILDER",
