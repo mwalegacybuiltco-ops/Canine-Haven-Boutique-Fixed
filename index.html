@@ -152,13 +152,14 @@
     function ensureAffiliateFromUrl(){
   const code = affCodeFromUrl();
   if(code){
-    // Apply referral tag ONLY (do not unlock affiliate back office)
+    // Tag referral only (do NOT unlock affiliate back office)
     store.set("chb_aff", { code, at: Date.now() });
 
-    // Safety: always keep affiliate center locked for referral links
-    store.del("chb_aff_unlocked");
+    // Force lock using raw localStorage (works even if store.del doesn't exist)
+    try { localStorage.removeItem("chb_aff_unlocked"); } catch(e) {}
   }
 }
+
 
     function getAffiliate(){ return store.get("chb_aff", null); }
 
