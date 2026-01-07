@@ -345,64 +345,62 @@
       $("#m_support").onclick = ()=> openLink(CFG.publicPages.support);
     }
 
-    // If opened with ?aff=CODE, tag referral ONLY (stay locked)
-const urlCode = affCodeFromUrl();
-if(urlCode){
-  store.set("chb_aff", { code:urlCode, at: Date.now() });
-  try { localStorage.removeItem("chb_aff_unlocked"); } catch(e) {}
-  showToast("Referral code applied ✅");
-  // stay on gate page until PIN is entered
-}
+    /function renderAffiliateGate(){
+  setActive("affiliate");
 
-      const aff = getAffiliate();
-      const hasAff = aff && aff.code;
+  // If already unlocked, go straight in
+  const unlocked = store.get("chb_aff_unlocked", false);
+  if(unlocked){ renderAffiliateCenter(); return; }
 
-      app.innerHTML = `
-        <div class="wrap">
-          <div class="hero">
-            <img src="${ASSETS.brand.crest}" alt="Canine Haven" onerror="this.style.display='none'"/>
-            <div class="overlay"></div>
-          </div>
+  // Tag referral ONLY (do not unlock)
+  const urlCode = affCodeFromUrl();
+  if(urlCode){
+    store.set("chb_aff", { code:urlCode, at: Date.now() });
+    try { localStorage.removeItem("chb_aff_unlocked"); } catch(e) {}
+    showToast("Referral code applied ✅");
+  }
 
-          <div class="card">
-            <b>Affiliate Access</b>
-            <div class="p">Enter the PIN to unlock, or open the app with your <b>?aff=CODE</b> link.</div>
+  const aff = getAffiliate();
+  const hasAff = aff && aff.code;
 
-            <div class="label">PIN</div>
-            <input id="pin" inputmode="numeric" placeholder="Enter PIN"/>
+  app.innerHTML = `
+    <div class="wrap">
+      <div class="hero">
+        <img src="${ASSETS.brand.crest}" alt="Canine Haven" onerror="this.style.display='none'"/>
+        <div class="overlay"></div>
+      </div>
 
-            <button class="btn purple linkbtn" id="unlock">Unlock</button>
+      <div class="card">
+        <b>Affiliate Access</b>
+        <div class="p">Enter the PIN to unlock. Referral links <b>(?aff=CODE)</b> will not unlock the back office.</div>
 
-            ${hasAff ? `<div class="small" style="margin-top:10px">Active code: <b>${aff.code}</b></div>` : ``}
+        <div class="label">PIN</div>
+        <input id="pin" inputmode="numeric" placeholder="Enter PIN"/>
 
-            <div class="hr"></div>
+        <button class="btn purple linkbtn" id="unlock" type="button">Unlock</button>
 
-            <button class="btn outline linkbtn" id="apply">🤍 Become an Affiliate (Application)</button>
-          </div>
+        ${hasAff ? `<div class="small" style="margin-top:10px">Referral code active: <b>${aff.code}</b></div>` : ``}
 
-          <div class="footer"></div>
-        </div>
-      `;
+        <div class="hr"></div>
 
-      $("#unlock").onclick = ()=>{
-        const pin = ($("#pin").value||"").trim();
-        if(pin === CFG.affiliate.pin){
-          store.set("chb_aff_unlocked", true);
-          renderAffiliateCenter();
-        }else{
-          showToast("Incorrect PIN");
-        }
-      };
+        <button class="btn outline linkbtn" id="apply" type="button">🤍 Become an Affiliate (Application)</button>
+      </div>
 
-      $("#apply").onclick = ()=> openLink(CFG.publicPages.becomeAffiliate);
+      <div class="footer"></div>
+    </div>
+  `;
 
-      // If opened with ?aff=CODE, tag referral ONLY (stay locked)
-const urlCode = affCodeFromUrl();
-if(urlCode){
-  store.set("chb_aff", { code:urlCode, at: Date.now() });
-  store.del("chb_aff_unlocked");
-  showToast("Referral code applied ✅");
-  // stay on the gate page until PIN is entered
+  $("#unlock").onclick = ()=>{
+    const pin = ($("#pin").value||"").trim();
+    if(pin === CFG.affiliate.pin){
+      store.set("chb_aff_unlocked", true);
+      renderAffiliateCenter();
+    }else{
+      showToast("Incorrect PIN");
+    }
+  };
+
+  $("#apply").onclick = ()=> openLink(CFG.publicPages.becomeAffiliate);
 }
 
 
