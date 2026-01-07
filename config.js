@@ -11,7 +11,7 @@ window.CHB_CONFIG = {
   // PUBLIC PAGES (customers can see these)
   publicPages: {
     becomeAffiliate: "https://forms.gle/kEnkb17hcweuXHDU9",
-    support: "https://forms.gle/PASTE_SUPPORT",
+    support: "https://forms.gle/viMohYwTT213oRXA9",
     shippingReturns: "https://beacons.ai/PASTE_SHIPPING_RETURNS",
     faqs: "https://beacons.ai/PASTE_FAQS",
     contact: "https://forms.gle/PASTE_CONTACT_FORM"
