@@ -15,3 +15,13 @@ window.CHB_PRODUCTS = [
   }
 ];
 
+window.CHB_PRODUCTS = [
+  {
+    id: "product-01",
+    name: "CHB Affiliate ",
+    price: "$210",
+    category: "Bundles",
+    image: "https://via.placeholder.com/300",
+    squareLink: "https://square.link/u/z1Ar6MfE"
+  }
+];
