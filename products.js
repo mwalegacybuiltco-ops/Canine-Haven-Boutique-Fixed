@@ -19,7 +19,7 @@ window.CHB_PRODUCTS = [
   {
     id: "product-01",
     name: "CHB Affiliate ",
-    price: "$210",
+    price: "$210.00",
     category: "Bundles",
     image: "https://square.link/u/z1Ar6MfE",
     squareLink: "https://square.link/u/z1Ar6MfE"
