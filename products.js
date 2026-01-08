@@ -4,16 +4,14 @@
 
 window.CHB_PRODUCTS = [];
 
-/*
-Example product:
 window.CHB_PRODUCTS = [
   {
-    id: "jacket-01",
-    name: "Cozy Dog Jacket",
-    price: "$49.00",
+    id: "product-01",
+    name: "Thermal Dog Coat",
+    price: "$72.15",
     category: "Apparel",
-    image: "assets/products/jacket-01.jpg", // or a full https:// image URL
-    squareLink: "https://square.link/u/YOUR_LINK"
+    image: "https://square.link/u/gASzWIbq",
+    squareLink: "https://square.link/u/gASzWIbq"
   }
 ];
-*/
+
