@@ -20,11 +20,11 @@ window.CHB_CONFIG = {
   // MENU LINKS
   menuLinks: {
     shop: {
-      apparel: "https://beacons.ai/PASTE_APPAREL_PAGE",
-      walkEssentials: "https://beacons.ai/PASTE_WALK_PAGE",
-      accessories: "https://beacons.ai/PASTE_ACCESSORIES_PAGE",
-      bundles: "https://beacons.ai/PASTE_BUNDLES_PAGE",
-      petParentMerch: "https://beacons.ai/PASTE_PET_PARENT_MERCH_PAGE"
+      apparel: "https://caninehavenboutique.square.site/join-us",
+      walkEssentials: "https://caninehavenboutique.square.site/join-us",
+      accessories: "https://caninehavenboutique.square.site/join-us",
+      bundles: "https://caninehavenboutique.square.site/join-us",
+      petParentMerch: "https://caninehavenboutique.square.site/join-us"
     },
     about: {
       ourStory: "https://docs.google.com/document/d/1VOtr23jMYWVdlcWUiQ_Sup4AH6-HQnadODGU-lSPJwg/edit?usp=sharing",
