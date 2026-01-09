@@ -1,8 +1,5 @@
 // products.js
-// Leave empty until you're ready to add products.
-// When you add products, replace the [] with your product objects.
-
-window.CHB_PRODUCTS = [];
+// All products live inside ONE array
 
 window.CHB_PRODUCTS = [
   {
@@ -10,18 +7,15 @@ window.CHB_PRODUCTS = [
     name: "Thermal Dog Coat",
     price: "$72.15",
     category: "Apparel",
-    image: "https://square.link/u/gASzWIbq",
+    image: "https://via.placeholder.com/300",
     squareLink: "https://square.link/u/gASzWIbq"
-  }
-];
-
-window.CHB_PRODUCTS = [
+  },
   {
-    id: "product-01",
-    name: "CHB Affiliate ",
+    id: "product-02",
+    name: "CHB Affiliate",
     price: "$210.00",
     category: "Bundles",
-    image: "https://square.link/u/z1Ar6MfE",
+    image: "https://via.placeholder.com/300",
     squareLink: "https://square.link/u/z1Ar6MfE"
   }
 ];
