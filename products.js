@@ -17,14 +17,14 @@ window.CHB_PRODUCTS = [
     category: "Bundles",
     image: "https://via.placeholder.com/300",
     squareLink: "https://square.link/u/z1Ar6MfE"
-  }
-];
-{
+  },
+  {
     id: "product-03",
     name: "CHB Early Access Pass",
-    price: "$50",
+    price: "$50.00",
     category: "Bundles",
     image: "https://via.placeholder.com/300",
     squareLink: "https://square.link/u/3oRoVRtT"
   }
 ];
+
