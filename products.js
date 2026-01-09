@@ -17,7 +17,7 @@ window.CHB_PRODUCTS = [
 
 window.CHB_PRODUCTS = [
   {
-    id: "product-01",
+    id: "product-02",
     name: "CHB Affiliate ",
     price: "$210.00",
     category: "Bundles",
