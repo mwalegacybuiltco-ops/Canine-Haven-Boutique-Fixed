@@ -23,7 +23,7 @@ window.CHB_CONFIG = {
       apparel: "https://caninehavenboutique.square.site/shop/apparel/FK5BUKOMEZSRC5HYRCB5VCA7",
       walkEssentials: "https://caninehavenboutique.square.site/shop/walk-accessories/2KHLIIA7RPC7AXRHV62C6QDG",
       accessories: "https://caninehavenboutique.square.site/shop/accessories/2XL2X2FG7K7WB2NZKLYLENJH",
-      bundles: "https://caninehavenboutique.square.site/join-us",
+      bundles: "https://caninehavenboutique.square.site/shop/bundles/5T43VYWKXBBBWDJD7YRD6GCU?page=1&limit=30&sort_by=category_order&sort_order=asc",
       petParentMerch: "https://caninehavenboutique.square.site/shop/pet-parent-merch/LAGHALQXBMCYT7T2HSUJYQG7"
     },
     about: {
