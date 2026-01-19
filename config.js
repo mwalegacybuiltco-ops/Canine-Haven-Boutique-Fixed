@@ -28,7 +28,7 @@ window.CHB_CONFIG = {
     },
     about: {
       ourStory: "https://docs.google.com/document/d/1VOtr23jMYWVdlcWUiQ_Sup4AH6-HQnadODGU-lSPJwg/edit?usp=sharing",
-      community: "https://www.facebook.com/share/g/1AFDJocmrZ/"
+      community: "https://www.facebook.com/share/g/1PCJ1M9fBw/?mibextid=wwXIfr"
     },
     workWithUs: {
       // This is your PUBLIC "Share & Earn" page or Google Form link
