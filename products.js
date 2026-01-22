@@ -27,11 +27,4 @@ window.CHB_PRODUCTS = [
     squareLink: "https://square.link/u/3oRoVRtT"
   }
 ];
-id: "product-04",
-    name: "Cozy knit cuties dog sweater",
-    price: "$34.99",
-    category: "Apparel",
-    image: "https://via.placeholder.com/300",
-    squareLink: "https://square.link/u/Kj4Jv8oD"
-  }
-];
+
