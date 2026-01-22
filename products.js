@@ -27,4 +27,11 @@ window.CHB_PRODUCTS = [
     squareLink: "https://square.link/u/3oRoVRtT"
   }
 ];
-
+id: "product-04",
+    name: "CHB Early Access Pass",
+    price: "$34.99",
+    category: "Apparel",
+    image: "https://via.placeholder.com/300",
+    squareLink: "https://square.link/u/Kj4Jv8oD"
+  }
+];
