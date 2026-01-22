@@ -28,7 +28,7 @@ window.CHB_PRODUCTS = [
   }
 ];
 id: "product-04",
-    name: "CHB Early Access Pass",
+    name: "Cozy knit cuties dog sweater",
     price: "$34.99",
     category: "Apparel",
     image: "https://via.placeholder.com/300",
