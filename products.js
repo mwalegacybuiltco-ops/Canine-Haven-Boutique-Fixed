@@ -26,13 +26,6 @@ window.CHB_PRODUCTS = [
     image: "https://via.placeholder.com/300",
     squareLink: "https://square.link/u/3oRoVRtT"
   }
-  {
-    id: "product-04",
-    name: "Pastel Paw Hoodie",
-    price: "$30.00",
-    category: "Apparel",
-    image: "https://via.placeholder.com/300",
-    squareLink: "https://square.link/u/xV0toYuF"
-  }
+  
 ];
 
