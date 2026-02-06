@@ -12,19 +12,19 @@ window.CHB_PRODUCTS = [
   },
   {
     id: "product-02",
-    name: "CHB Affiliate",
-    price: "$210.00",
-    category: "Bundles",
+    name: "Cozy Knit",
+    price: "$34.99",
+    category: "Apparel",
     image: "https://via.placeholder.com/300",
-    squareLink: "https://square.link/u/z1Ar6MfE"
+    squareLink: "https://square.link/u/Kj4Jv8oD"
   },
   {
     id: "product-03",
-    name: "CHB Early Access Pass",
-    price: "$50.00",
-    category: "Bundles",
+    name: "Pastel Paw hoodie",
+    price: "$30.00",
+    category: "Apparel",
     image: "https://via.placeholder.com/300",
-    squareLink: "https://square.link/u/3oRoVRtT"
+    squareLink: "https://square.link/u/xV0toYuF"
   }
   
 ];
